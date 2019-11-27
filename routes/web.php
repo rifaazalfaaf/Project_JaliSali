@@ -18,4 +18,6 @@
 Route::get('/', 'HomeController@show');
 Route::get('/login', 'LoginController@show');
 Route::get('/register', 'RegisterController@show');
+Route::get('/list-jasa', 'ListJasaController@show');
+
 
