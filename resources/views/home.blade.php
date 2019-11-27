@@ -22,7 +22,7 @@
                 <ul>
                     <!-- <li class="sign-in">Sign In</li>
                     <li class="sign-in">Sign In</li> -->
-                    <li><a href="sign-in.html"></a> Sign In</li>
+                    <li><a href="sign-in.html"> Sign In</a></li>
                 </ul>
             </div>
         </nav>

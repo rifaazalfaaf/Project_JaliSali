@@ -22,7 +22,7 @@
                 <ul>
                     <!-- <li class="sign-in">Sign In</li>
                     <li class="sign-in">Sign In</li> -->
-                    <li><a href="login.html"></a>Sign In</li>
+                    <li><a href="">Sign In</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,20 +32,20 @@
             <form action="">
                 <div class="card2">
                     <p>Email</p>
-                    <input type="text" name="" id="" placeholder=""> 
+                    <input type="text" name="" id="" placeholder="jhonny@email.com"> 
                     
                     <p>Username</p>
-                    <input type="text" name="" id="" placeholder=""> 
+                    <input type="text" name="" id="" placeholder="jhonnyjhon"> 
                     
                     <p>Password</p>
-                    <input type="password" name="" id="" placeholder=""> 
+                    <input type="password" name="" id="" placeholder="min. 8 karakter"> 
 
                     <p>Confirm Password</p>
-                    <input type="password" name="" id="" placeholder="">
+                    <input type="password" name="" id="" placeholder="min. 8 karakter">
 
                     <div id="cb-text">
                         <input type="checkbox" name="" id="">
-                        Term of Service
+                        <a class="tos" href="/listjasa.html">Terms of Service</a> 
                     </div>
 
                     <input type="submit" class="button" value="Register">

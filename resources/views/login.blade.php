@@ -22,7 +22,7 @@
                 <ul>
                     <!-- <li class="sign-in">Sign In</li>
                     <li class="sign-in">Sign In</li> -->
-                    <li><a href="signup.html"></a> Sign Up</li>
+                    <li><a href="signup.html">Sign Up</a> </li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +32,7 @@
             <form action="">
                 <div class="card2">
                     <p>Username</p>
-                    <input type="text" name="" id="" placeholder="Masukkan username/email"> 
+                    <input type="text" name="" id="" placeholder="Masukkan username / email"> 
 
                     <p>Password</p>
                     <input type="password" name="" id="" placeholder="Masukkan password">
