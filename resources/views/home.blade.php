@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <!-- <header id="header">
         
     </header> -->
-
+    <script>
+        if(true) //TODO: ganti sama is login success
+            swal('Login Sukses!', '', 'success');
+    </script>
     <div class="home">
         <nav>
             <div class="logo">
