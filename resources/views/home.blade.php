@@ -26,7 +26,12 @@
                 <ul>
                     <!-- <li class="sign-in">Sign In</li>
                     <li class="sign-in">Sign In</li> -->
-                    <li><a href="sign-in.html"> Sign In</a></li>
+                    <li><a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"> Sign In</a></li>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
                 </ul>
             </div>
         </nav>
