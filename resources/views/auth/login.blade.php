@@ -20,7 +20,7 @@
                 <div class="card2">
                     {{ csrf_field() }}
                     <p>Email</p>
-                    <input type="text" name="" id="" placeholder="Masukkan email" value="{{ old('email') }}" required autofocus> 
+                    <input type="text" name="email" id="" placeholder="Masukkan email" value="{{ old('email') }}" required autofocus> 
                     
                     @if ($errors->has('email'))
                         <span class="help-block">
@@ -29,7 +29,7 @@
                     @endif
 
                     <p>Password</p>
-                    <input type="password" name="" id="" placeholder="Masukkan password">
+                    <input type="password" for="password" name="password" id="" placeholder="Masukkan password">
                     @if ($errors->has('password'))
                         <span class="help-block">
                             <strong>{{ $errors->first('password') }}</strong>
