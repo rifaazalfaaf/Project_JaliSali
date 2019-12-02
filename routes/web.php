@@ -21,3 +21,7 @@ Route::get('/register', 'RegisterController@show');
 Route::get('/list-jasa', 'ListJasaController@show');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
