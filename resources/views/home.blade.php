@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <title>JaliSali</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
     <!-- <header id="header">
         
     </header> -->
-
+    <script>
+        if(true) //TODO: ganti sama is login success
+            swal('Login Sukses!', '', 'success');
+    </script>
     <div class="home">
         <nav>
             <div class="logo">
@@ -24,6 +29,12 @@
                     <!-- <li class="sign-in">Sign In</li>
                     <li class="sign-in">Sign In</li> -->
                     <li><a href="/logout"> Logout</a></li>
+                    <li><a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"> Sign In</a></li>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
                 </ul>
                 @else
                 <ul>

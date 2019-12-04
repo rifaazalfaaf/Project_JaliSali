@@ -22,3 +22,7 @@ Route::get('/list-jasa', 'ListJasaController@show');
 Route::get('/logout','LoginController@logout');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
