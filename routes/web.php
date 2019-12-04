@@ -11,12 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+Route::get('/', 'HomeController@show');
+Route::get('/login', 'LoginController@show');
+Route::post('logincheck','LoginController@check');
+Route::get('/register', 'RegisterController@show');
+Route::post('/registeraccount','RegisterController@register');
+Route::get('/list-jasa', 'ListJasaController@show');
 
-Route::get('home','HomepageController@index');
+Route::get('/logout','LoginController@logout');
 
-Route::get('profile','ProfileController@index');
 
