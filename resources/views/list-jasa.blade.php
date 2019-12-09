@@ -55,114 +55,29 @@
 
             <div class="products">
                 <div class="list-products">
-                    <div class="list-box" onclick="location.href='index.html';">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=1" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
                     
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=2" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
+                    
+                    @foreach($jasa as $js)
 
                     <div class="list-box">
                         <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
+                            <div class="price"><p>Rp {{$js->Harga}}</p></div>
                             <div class="fave">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </div>
-                            <img src="https://picsum.photos/200/300?random=3" alt="">
+                            <img src="Foto Jasa/{{$js->Foto}}" alt="">
                         </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
+                        <div class="info"><p>{{$js->NamaJasa}}</p></div>
                     </div>
 
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=3" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
+                    @endforeach
 
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=4" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
 
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=5" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
 
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=6" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
 
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=7" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
 
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=8" alt="">
-                        </div>
-                        <div class="info"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </div>
 
-                    <div class="list-box">
-                        <div class="pict">
-                            <div class="price"><p>Rp 150.000</p></div>
-                            <div class="fave">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                            <img src="https://picsum.photos/200/300?random=9" alt="">
-                        </div>
-                    </div>
+
                     <div class="list-box"></div>
                     <div class="list-box"></div>
                     <div class="list-box"></div>

@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+
+use App\Jasa;
 use App\Http\Controllers\Controller;
 
 class ListJasaController extends Controller
 {
     public function show()
     {
-        return view('list-jasa');
+        $jasa = Jasa::get();
+
+        return view('list-jasa',['jasa'=>$jasa]);
     }
 }
