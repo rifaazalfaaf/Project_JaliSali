@@ -18,7 +18,7 @@ body {
   font-family: 'Cabin', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #ffffff;
+  background: var(--linear);
 }
 
 a {
@@ -46,7 +46,7 @@ ul li {
 }
 
 header {
-  background: var(--linear);
+  background: nonin;
   height: 80px;
 }
 
@@ -303,7 +303,7 @@ nav li:hover a {
 
 section {
   height: 100vh;
-  background: #ffffff;
+  background: nonin;
 }
 
 .breadcrumbs {
@@ -315,7 +315,7 @@ section {
 }
 
 .wrapper {
-  background: #fffff;
+  background: nonin;
   width: 80%;
   margin: auto;
   display: -ms-grid;
@@ -333,6 +333,8 @@ section {
   border: 1px solid var(--color2);
   height: auto;
   padding: 1em;
+  background: white;
+  border-radius: 5%;
 }
 
 .wrapper .categories h2 {
@@ -430,3 +432,46 @@ section {
   transition: ease-in 0.3ms;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+/*=================================LIST ORDERAN DAVID===================================*/
+
+.products .list-order {
+  background:white ;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1%;
+  /* border: 1px solid black; */
+}
+
+.list-order .status{
+  font-size: larger;
+  /* border: 1px solid black; */
+  text-align: center;
+  border-radius: 10px;
+  padding:10%;
+}
+
+.list-order .more{
+  text-align: center;
+  background: linear-gradient(126.07deg, #04DC74 -2.02%, #13C4FC 129.72%);
+  padding-top:5% ;
+  padding-bottom:5% ;
+  border-radius: 10px;
+  color:white;  
+
+}
+
+.list-order .more:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: ease-in 0.3ms;
+  transition: ease-in 0.3ms;
+}
